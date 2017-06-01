@@ -4,6 +4,6 @@
 
 FROM postgres:alpine
 
-ENV POSTGRES_USER = "indaym"
-ENV POSTGRES_PASSWORD = "indaym"
-ENV POSTGRES_DB = "main"
+ENV POSTGRES_USER="indaym"
+ENV POSTGRES_PASSWORD="indaym"
+ENV POSTGRES_DB="main"
