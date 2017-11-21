@@ -21,9 +21,24 @@ Others OS:
 
 
 Build and launch :
-- Go in the directory where you downloaded the *Dockerfile* and build the project with the command `docker build -t indaym .` (<= this dot is inside the command)
-- Create a volume to have persistant data for your database, `docker volume create indaym-volume`
-- Launch the docker, `docker run --rm -p 4001:5432 -v indaym-volume:/var/lib/postgresql/data --name indaym indaym`
+- Go in the directory where you downloaded the *Dockerfile* and build the project with the command
+
+```bash
+docker build -t indaym . # <= this dot is inside the command
+```
+
+- Create a volume to have persistant data for your database,
+
+```bash
+docker volume create indaym-volume
+```
+
+- Launch the docker,
+
+```bash
+docker run --rm -p 4001:5432 -v indaym-volume:/var/lib/postgresql/data --name indaym indaym
+```
+
 
 Now you can access to database with the url *localhost:4001*
 
